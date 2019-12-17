@@ -1,0 +1,11 @@
+package com.bridgelabzs.orderedlist;
+
+public class OrderdList {
+
+	public static void main(String[] args) {
+
+		Utility utility=new Utility();
+		utility.add(5);
+	}
+
+}

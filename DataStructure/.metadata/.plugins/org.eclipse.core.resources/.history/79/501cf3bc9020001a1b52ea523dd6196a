@@ -1,0 +1,5 @@
+package com.bridgelabzs.node;
+
+public class Node<E> {
+
+}

@@ -1,0 +1,59 @@
+package com.bridgelabzs.orderedlist;
+
+import java.io.*;
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class Utility <T>{
+	Scanner scn;
+	
+	public Utility() {
+		scn = new Scanner(System.in);
+	}
+	
+    public int integerInput()
+    {
+  	  return scn.nextInt();
+    }
+    public double doubleInput()
+    {
+  	  return scn.nextDouble();
+    }
+    public String stringInput()
+    {
+  	  return scn.nextLine();
+    }
+    public long longInput() {
+  	  return scn.nextLong();
+    }
+    private static String st;
+    
+    public static void unOrderedList(String userInput) throws Exception {
+		LinkedList<String> list = new LinkedList<String>();
+		File file = new File("UnOrderedList");
+		BufferedReader br = new BufferedReader(new FileReader(file));
+		String str = "";
+		while ((st = br.readLine()) != null) {
+			str = str + st+" ";
+		}
+		br.close();
+		for (String fileString : str.split("\\s", 0)) {
+			list.add(fileString);
+		}
+		System.out.println("Before Search");
+		System.out.println("=====");
+	    list.display();
+		boolean b = list.search(userInput);
+		if (b) {
+			list.remove(userInput);
+		} else {
+			list.add(userInput);
+		}
+		System.out.println("=====");
+		System.out.println("After Search");
+		System.out.println("=====");
+		list.display();
+		list.write();
+
+	}
+}
