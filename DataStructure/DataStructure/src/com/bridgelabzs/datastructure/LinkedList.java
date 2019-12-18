@@ -63,7 +63,8 @@ package com.bridgelabzs.datastructure;
 		public void write() throws Exception {
 			Node<T> t = head;
 			try {
-			PrintStream o = new PrintStream(new File("OrderedList"));
+			File file=new File("/home/user/Pratiksha/DataStructure/DataStructure/src/com/bridgelabzs/datastructure/orderlist.txt");
+			PrintStream o = new PrintStream(file);
 			System.setOut(o);
 			while(t!=null) {
 				System.out.println(t.data);
@@ -243,7 +244,6 @@ package com.bridgelabzs.datastructure;
 			System.out.println("=====");
 			System.out.println("Insert");
 			list.insert(4, 10);
-			//list.sort(0);
 			list.display();
 		}	
 			

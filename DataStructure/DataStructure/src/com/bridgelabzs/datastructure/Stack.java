@@ -8,7 +8,7 @@ public class Stack<T> {
 	@SuppressWarnings("unchecked")
 	public Stack(int length) {
 		this.length=length;
-		c = (T[]) new Object[length];
+		c =  (T[]) new Object[length];
 		top=0;
 	}
 	public void push(T d) {

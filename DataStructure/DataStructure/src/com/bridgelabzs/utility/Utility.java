@@ -239,7 +239,7 @@ public class Utility<T> {
 
 		public static void unOrderedList(String userInput) throws Exception {
 			LinkedList<String> list = new LinkedList<String>();
-			File file = new File("/home/user/Praiksha/DataStructure/DataStructure/src/com/bridgelabzs/datastructure/unorderedlist.txt");
+			File file = new File("/home/user/Pratiksha/DataStructure/DataStructure/src/com/bridgelabzs/datastructure/unorderedlist.txt");
 			BufferedReader br = new BufferedReader(new FileReader(file));
 			String str = "";
 			while ((st = br.readLine()) != null) {
@@ -269,7 +269,7 @@ public class Utility<T> {
 		static String stint;
 		public static void orderedList(String searchItem) throws Exception {
 			LinkedList<String> list = new LinkedList<String>();
-			File file = new File("/home/user/Praiksha/DataStructure/DataStructure/src/com/bridgelabzs/datastructure/orderlist.txt");
+			File file = new File("/home/user/Pratiksha/DataStructure/DataStructure/src/com/bridgelabzs/datastructure/orderlist.txt");
 			BufferedReader br = new BufferedReader(new FileReader(file));
 			String str = "";
 			while ((stint = br.readLine()) != null) {
@@ -293,6 +293,7 @@ public class Utility<T> {
 			System.out.println("=====");
 			list.display();
 			list.write();
+			
 		}
 
 		@SuppressWarnings("rawtypes")

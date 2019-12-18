@@ -9,7 +9,6 @@ public class OrderedList {
 		System.out.println("Enter the number to be searched");
 		String searchItem  = utility.inputString();
 		Utility.orderedList(searchItem);
-
 	}
 
 }
